@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-wrapper {
+  display: grid;
+  border-radius: 40px;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.item_1 h2 {
+  position: relative;
+  bottom: 90px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 37px;
+  font-weight: 700;
+}
+
+.item_1 h4 {
+  position: relative;
+  bottom: 85px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.item_1 img {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 33px;
+}
+
+.item_2 {
+  display: flex;
+  justify-content: end;
+}
+
+.item_3 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 30px 0px 20px 0px;
+  gap: 3%;
+  margin-top: 10%;
+}
+
+.item_3 .login-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item_3 .btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  gap: 2%;
+  height: 59px;
+  border-radius: 33px;
+  background: rgba(73, 187, 189, 0.6);
+}
+
+.btn-group a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* border: 1px solid blue; */
+  border-radius: 33px;
+  width: 45%;
+  height: 80%;
+}
+
+
+.description {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+form input {
+  border-radius: 40px;
+  border: 1px solid #49bbbd;
+  background: #fff;
+  padding: 20px;
+}
+
+.remember {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-btn {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+}
+
+.submit-btn .submit {
+  width: 50%;
+  height: 49px;
+  border-radius: 36px;
+  background: #49bbbd;
+  border: none;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .grid-wrapper {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .item_1 {
+    display: none;
+  }
+  .item_3 {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .item_3 .btn-group {
+    height: 50px;
+    width: 80%;
+  }
+  form {
+    width: 100%;
+  }
+  .description {
+    width: 100%;
+  }
+  .remember {
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+  .submit-btn .submit {
+    width: 80%;
+  }
+}
